@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background: linear-gradient(#AEC6E0, #6D9CCE) no-repeat;
+    background-size: contain;
+    height: auto;
+    overflow-x: hidden;
+    margin-bottom: 10vh;
+}
+
+nav {
+    height: 8.434vh;
+    width: 100%;
+    background-color: #ECF3FA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8.434vh;
+    height: 9.639vh;
+    border-right: 0.241vh solid #BDC2C8;
+}
+
+.logo {
+    width: 4.819vh;
+    height: 4.819vh;
+}
+
+nav h1 {
+    font-size: 4.819vh;
+    font-weight: 700;   
+    color: #394452;
+    text-align: center;
+    margin-left: 3.614vh;
+    user-select: none;
+}
+
+.language-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3.614vh;
+}
+
+
+.language-button {
+    position: relative;
+    width: 14.458vh;
+    height: 4.819vh;
+    border-radius: 2.41vh;
+    background-color: #394452;
+    cursor: pointer;
+}
+
+.language-button ::before {
+    position: absolute;
+    font-size: 1.928vh;
+    content: "ENG";
+    width: 6.627vh;
+    height: 3.614vh;
+    background-color: #AEC6E0;
+    border-radius: 1.928vh;
+    margin: 0.602vh 1.205vh;
+    text-align: center;
+    align-content: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    color: #394452;
+    transition: .5s;
+}
+
+.language-box input:checked + .language-button ::before{
+    content: "THA";
+    transform: translateX(5.422vh);
+}
+
+.language-box input {
+    display: none;
+}
+
+.container {
+    width: auto;
+    margin-top: 6.024vh;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.title h1 {
+    font-size: 11.566vh;
+    font-family: "Kanit", sans-serif;
+    font-weight: bold;
+    color: #394452;
+    user-select: none;
+}
+
+.university-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 9.639vh;
+    justify-content: space-between;
+    margin-top: 9.639vh;
+}
+
+.university-container a {
+    position: relative;
+    display: block;
+    width: 27.711vh;
+    height: 27.711vh;
+    background-color: #ffff;
+    border-radius: 100%;
+    transition: .5s all;
+}
+
+.university-container :hover a,.university-container2 :hover a,.university-container1 :hover h6,.university-container2 :hover h6 {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+.university-container img {
+    position: absolute;
+    bottom: 15%;
+    right: 15%;
+    width: 19.277vh;
+    height: 19.277vh;
+}
+
+
+.university-container h6 {
+    font-size: 3.855vh;
+    font-weight: 500;
+    color: #394452;
+    text-align: center;
+    margin-top: 2.41vh;
+    cursor: pointer;
+    transition: .5s all;
+}
+
+
+.chula img {
+    position: absolute;
+    width: 12.53vh;
+    height: 18.072vh;
+    bottom: 22%;
+    right: 27%;
+}
+
+.ladkrabang h6,.northbankok h6 {
+    font-size: 2.41vh;
+}
+
+
+@media (max-width:1400px) {
+    .university-container {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+
+
+@media (max-width:1000px) {
+    .university-container {
+        grid-template-columns: auto auto;
+        justify-content: center;
+        column-gap: 20%;
+    }
+
+    .title h1 {
+        text-align: center;
+    }
+}
+
+
+
+@media (max-width:600px) {
+    .title h1{
+        font-size: 7.711vh;
+    }
+
+    nav h1 {
+        font-size: 3.855vh;
+    }
+
+    .university-container {
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+}
+
+
+
+@media (max-width:500px) {
+    nav h1 {
+        font-size: 2.169vh;
+    }
+}
+
+
+
+@media (max-width:400px) {
+    nav h1 {
+        font-size: 1.687vh;
+    }
+
+    .title h1{
+        font-size: 5.783vh;
+    }
+}

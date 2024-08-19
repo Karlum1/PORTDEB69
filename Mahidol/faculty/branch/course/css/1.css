@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background: linear-gradient(#AEC6E0, #6D9CCE) no-repeat;
+    background-size: contain;
+    height: 156.627vh;
+}
+
+nav {
+    height: 8.434vh;
+    width: 100%;
+    background-color: #ECF3FA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8.434vh;
+    height: 9.639vh;
+    border-right: 0.241vh solid #BDC2C8;
+}
+
+.logo {
+    width: 4.819vh;
+    height: 4.819vh;
+}
+
+nav h1 {
+    font-size: 4.819vh;
+    font-weight: 700;   
+    color: #394452;
+    text-align: center;
+    margin-left: 3.614vh;
+    user-select: none;
+}
+
+.language-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3.614vh;
+}
+
+
+.language-button {
+    position: relative;
+    width: 14.458vh;
+    height: 4.819vh;
+    border-radius: 2.41vh;
+    background-color: #394452;
+    cursor: pointer;
+}
+
+.language-button ::before {
+    position: absolute;
+    font-size: 1.928vh;
+    content: "ENG";
+    width: 6.627vh;
+    height: 3.614vh;
+    background-color: #AEC6E0;
+    border-radius: 1.928vh;
+    margin: 0.602vh 1.205vh;
+    text-align: center;
+    align-content: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    color: #394452;
+    transition: .5s;
+}
+
+.language-box input:checked + .language-button ::before{
+    content: "THA";
+    transform: translateX(5.422vh);
+}
+
+.language-box input {
+    display: none;
+}
+
+.university {
+    margin-top: 12.048vh;
+    margin-left: 16.867vh;
+    display: flex;
+    align-items: center;
+}
+
+.university span {
+    position: relative;
+    width: 30.12vh;
+    height: 30.12vh;
+    background-color: #ffff;
+    border-radius: 100%;
+}
+
+.university span img {
+    position: absolute;
+    bottom: 16%;
+    right: 16%;
+    width: 20.482vh;
+    height: 20.482vh;
+}
+
+.university h1 {
+    margin-left: 7.229vh;
+    font-size: 7.711vh;
+    font-weight: 500;
+    color: #394452;
+}
+
+.faculty {
+    display: grid;
+    margin: 12.048vh auto;
+    width: 80%;
+    height: auto;
+    background-color: #ECF3FA;
+}
+
+.faculty-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #394452;
+    width: 100%;
+    height: 10.843vh;
+}
+
+.faculty-head h1{
+    color: #ECF3FA;
+    font-size: 4.578vh;
+    font-weight: 600;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    width: auto;
+    margin-left: 6.024vh;
+}
+
+.title span {
+    font-size: 3.614vh;
+    color: #ECF3FA;
+    margin: auto 3.614vh;
+}
+
+.title h2 {
+    color: #ECF3FA;
+    font-size: 2.41vh;
+    font-weight: 500;
+}
+
+.title h3 {
+    color: #ECF3FA;
+    font-size: 1.928vh;
+    font-weight: 500;
+}
+
+.faculty-head span {
+    color: #ECF3FA;
+    font-size: 4.578vh;
+    margin-right: 6.024vh;
+}
+
+.faculty-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.12vh solid #BDC2C8;
+    height: 10.843vh;
+}
+
+.faculty-box h3 {
+    margin-left: 6.024vh;
+    color: #394452;
+    font-weight: 400;
+    font-size: 2.892vh;
+    text-transform: uppercase;
+}
+
+.count {
+    display: flex;
+    align-items: center;
+}
+
+.count span {
+    font-size: 5.542vh;
+    color: #394452;
+}
+
+.count h6 {
+    font-size: 4.337vh;
+    font-weight: 400;
+    color: #394452;
+    margin-left: 2.41vh;
+    margin-right: 6.024vh;
+}
+
+.faculty :hover {
+    cursor: pointer;
+    background-color: #394452;
+}
+
+.faculty :hover h3,.faculty :hover span,.faculty :hover h6 {
+    cursor: pointer;
+    color: #ECF3FA;
+}
+
+
+@media (max-width:1300px) {
+    .faculty-box h3 {
+        font-size: 1.928vh;
+    }
+}
+
+
+
+@media (max-width:1210px) {
+    .university span {
+        width: 24.096vh;
+        height: 24.096vh;
+    }
+    
+    .university span img {
+        bottom: 19%;
+        right: 19%;
+        width: 14.458vh;
+        height: 14.458vh;
+    }
+
+    .university h1 {
+        font-size: 5.783vh;
+    }
+
+    .faculty-head h1 {
+        font-size: 3.855vh;
+    }
+
+    .faculty-head span {
+        font-size: 3.855vh;
+    }
+
+    .faculty-box h3 {
+        font-size: 1.928vh;
+    }
+
+    .count span {
+        font-size: 4.337vh;
+        color: #394452;
+    }
+    
+    .count h6 {
+        font-size: 3.855vh;
+        font-weight: 400;
+        color: #394452;
+        margin-left: 2.41vh;
+        margin-right: 6.024vh;
+    }
+}
+
+
+
+@media (max-width:980px) { 
+    .faculty-head h1 {
+        display: none;
+    }
+
+    #arrow1 {
+        display: none;
+    }
+
+    .faculty-head span {
+        margin: auto 1.205vh;
+    }
+}
+
+
+
+
+@media (max-width:750px) {
+    .university {
+        display: grid;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .university span {
+        margin: auto;
+    }
+
+    .university h1 {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .faculty {
+        margin: 0 auto;
+        margin-top: 12.048vh;
+    }
+
+    .faculty-head {
+        height: 9.639vh;
+    }
+
+    .faculty-head h1 {
+        font-size: 1.928vh;
+    }
+
+    .faculty-head h2 {
+        font-size: 1.928vh;
+    }
+
+    .faculty-head h3 {
+        font-size: 1.928vh;
+    }
+
+    .title span {
+        margin: auto 1.205vh;
+    }
+
+    .faculty-head a span {
+        display: none;
+    }
+
+    .faculty-box {
+        height: 9.639vh;
+    }
+
+    .faculty-box h3 {
+        margin-left: 3.614vh;
+        font-size: 1.687vh;
+    }
+    
+    .count h6 {
+        margin-right: 3.614vh;
+    }
+}
+
+
+@media (max-width:590px) {
+    nav h1 {
+        font-size: 3.373vh;
+    }
+
+    .university {
+        display: grid;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .university span {
+        margin: auto;
+    }
+
+    .university h1 {
+        font-size: 3.855vh;
+        margin-left: 0;
+    }
+
+    .faculty {
+        margin: 0 auto;
+        margin-top: 12.048vh;
+    }
+
+    .faculty-head {
+        height: 9.639vh;
+    }
+
+    .faculty-head h1 {
+        display: none;
+    }
+
+    .faculty-head h2 {
+        display: none;
+    }
+
+    .title span {
+        display: none;
+    }
+
+    .faculty-box {
+        height: 9.639vh;
+    }
+
+    .faculty-box h3 {
+        font-size: 1.446vh;
+    }
+
+    .count span {
+        font-size: 2.892vh;
+    }
+    
+    .count h6 {
+        font-size: 1.928vh;
+        margin-right: 3.614vh;
+    }
+}
+
+
+@media (max-width:470px) {
+    nav h1 {
+        font-size: 2.41vh;
+    }
+
+    .faculty-box h3 {
+        font-size: 1.205vh;
+    }
+}

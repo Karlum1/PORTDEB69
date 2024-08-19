@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background: linear-gradient(#AEC6E0, #6D9CCE) no-repeat;
+    background-size: contain;
+    height: 168.675vh;
+}
+
+nav {
+    height: 8.434vh;
+    width: 100%;
+    background-color: #ECF3FA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8.434vh;
+    height: 9.639vh;
+    border-right: 0.241vh solid #BDC2C8;
+}
+
+.logo {
+    width: 4.819vh;
+    height: 4.819vh;
+}
+
+nav h1 {
+    font-size: 4.819vh;
+    font-weight: 700;   
+    color: #394452;
+    text-align: center;
+    margin-left: 3.614vh;
+    user-select: none;
+}
+
+.language-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3.614vh;
+}
+
+
+.language-button {
+    position: relative;
+    width: 14.458vh;
+    height: 4.819vh;
+    border-radius: 2.41vh;
+    background-color: #394452;
+    cursor: pointer;
+}
+
+.language-button ::before {
+    position: absolute;
+    font-size: 1.928vh;
+    content: "ENG";
+    width: 6.627vh;
+    height: 3.614vh;
+    background-color: #AEC6E0;
+    border-radius: 1.928vh;
+    margin: 0.602vh 1.205vh;
+    text-align: center;
+    align-content: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    color: #394452;
+    transition: .5s;
+}
+
+.language-box input:checked + .language-button ::before{
+    content: "THA";
+    transform: translateX(5.422vh);
+}
+
+.language-box input {
+    display: none;
+}
+
+.university {
+    margin-top: 4.819vh;
+    margin-left: 8.434vh;
+    display: flex;
+    align-items: center;
+}
+
+.university span {
+    position: relative;
+    width: 30.12vh;
+    height: 30.12vh;
+    background-color: #ffff;
+    border-radius: 100%;
+}
+
+.university span img {
+    position: absolute;
+    bottom: 16%;
+    right: 16%;
+    width: 20.482vh;
+    height: 20.482vh;
+}
+
+.title {
+    margin-left: 7.229vh;
+    color: #394452;
+}
+
+.title h1 {
+    font-size: 4.337vh;
+    font-weight: 600;
+}
+
+.title h3 {
+    margin-top: 1.205vh;
+    margin-bottom: 1.205vh;
+    font-size: 2.892vh;
+    font-weight: 400;
+}
+
+.title h2 {
+    font-size: 2.892vh;
+    font-weight: 500;
+}
+
+.portfolio-container {
+    display: grid;
+    justify-content: center;
+    color: #394452;
+    text-align: center;
+    margin-top: 12.048vh;
+}
+
+.portfolio-container img {
+    width: 42.169vh;
+    height: 60.241vh;
+    border-radius: 3.614vh;
+    transition: .5s all;
+}
+
+.portfolio-container h1 {
+    color: #394452;
+    margin-top: 2.41vh;
+    font-size: 5.783vh;
+    font-weight: 500;
+}
+
+.portfolio-container h6 {
+    font-size: 3.855vh;
+    font-weight: 400;
+}
+
+.portfolio-container a span :hover {
+    transform: scale(1.1);
+}
+
+.portfolio-container a :hover {
+    text-decoration: underline;
+}
+
+@media (max-width:1210px) {
+    .university span {
+        width: 24.096vh;
+        height: 24.096vh;
+    }
+    
+    .university span img {
+        bottom: 19%;
+        right: 19%;
+        width: 14.458vh;
+        height: 14.458vh;
+    }
+
+    .university h1 {
+        font-size: 3.855vh;
+    }
+
+    .university h2 {
+        font-size: 2.41vh;
+    }
+
+    .university h3 {
+        font-size: 2.41vh;
+    }
+
+    .portfolio-container img {
+        width: 34.096vh;
+        height: 48.193vh;
+    }
+    
+    .portfolio-container h1 {
+        font-size: 4.337vh;
+    }
+    
+    .portfolio-container h6 {
+        font-size: 3.373vh;
+    }
+}
+
+
+
+@media (max-width:980px) {
+    .university {
+        display: grid;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .university span {
+        margin: auto;
+    }
+
+    .university h1 {
+        margin-top: 3.614vh;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .portfolio-container img {
+        width: 25.542vh;
+        height: 36.145vh;
+    }
+    
+    .portfolio-container h1 {
+        font-size: 3.855vh;
+    }
+    
+    .portfolio-container h6 {
+        font-size: 2.892vh;
+    }
+}
+
+
+
+@media (max-width:650px) {
+    nav h1 {
+        font-size: 3.373vh;
+    }
+
+    .university h1 {
+        font-size: 2.892vh;
+    }
+
+    .university h2 {
+        font-size: 1.928vh;
+    }
+
+    .university h3 {
+        font-size: 1.928vh;
+    }
+
+    .portfolio-container img {
+        width: 21.325vh;
+        height: 30.12vh;
+    }
+    
+    .portfolio-container h1 {
+        font-size: 3.373vh;
+    }
+    
+    .portfolio-container h6 {
+        font-size: 2.41vh;
+    }
+}
+
+
+
+@media (max-width:470px) {
+    nav h1 {
+        font-size: 2.892vh;
+    }
+
+    .university span {
+        width: 18.072vh;
+        height: 18.072vh;
+    }
+    
+    .university span img {
+        bottom: 18%;
+        right: 16%;
+        width: 12.048vh;
+        height: 12.048vh;
+    }
+
+    .university h1 {
+        font-size: 2.41vh;
+    }
+
+    .university h2 {
+        font-size: 1.687vh;
+    }
+
+    .university h3 {
+        font-size: 1.687vh;
+    }
+
+    .portfolio-container {
+        margin-top: 6.024vh;
+    }
+
+    .portfolio-container img {
+        width: 21.325vh;
+        height: 30.12vh;
+    }
+    
+    .portfolio-container h1 {
+        font-size: 3.373vh;
+    }
+    
+    .portfolio-container h6 {
+        font-size: 2.41vh;
+    }
+}
+
+
+
+@media (max-width:400px) {
+    nav h1 {
+        font-size: 1.928vh;
+    }
+
+    .university span {
+        width: 18.072vh;
+        height: 18.072vh;
+    }
+
+    .university h1 {
+        font-size: 1.928vh;
+    }
+
+    .university h2 {
+        font-size: 1.325vh;
+    }
+
+    .university h3 {
+        font-size: 1.325vh;
+    }
+
+    .portfolio-container {
+        display: grid;
+        justify-content: center;
+    }
+
+    .portfolio-container img {
+        width: 17.47vh;
+        height: 24.096vh;
+    }
+    
+    .portfolio-container h1 {
+        margin-top: 1.807vh;
+        font-size: 2.892vh;
+    }
+    
+    .portfolio-container h6 {
+        margin-top: 1.807vh;
+        font-size: 1.928vh;
+    }
+}
