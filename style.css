@@ -10,8 +10,7 @@
 body {
     background: linear-gradient(#AEC6E0, #6D9CCE) no-repeat;
     background-size: contain;
-    height: 123.373vh;
-    overflow-y: hidden;
+    height: 113.373vh;
 }
 
 nav {
